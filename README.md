@@ -1,7 +1,6 @@
 # Linear- and Logistic Regression
 ## This repo is dedicated to two widely known algorithms used under supervised learning, linear regression and logisitc regression which is often called classification.
-### There are 4 functions used in Linear regression:
-
+### Linear regression:
 ### **Compute Cost**
   - #### Description: Compute Cost is a function which finds the accumulative loss function of every training example and returns this accumulutation multiplied by $\frac{1}{2m}$.            The formula looks as follows:
     $$J(wb) = \frac{1}{2m} \sum_{i=1}^{m}(f_{w,b}(x^{(i)}) - y^{(i)})^2$$
@@ -13,11 +12,16 @@
  - #### Description: Compute gradient returns the gradient for every w parameter and b parameter for each training example, first looping through "m" amount of times, and thereafter a nestood loop of "j" iterations to retrieve the gradient of every feature coefficient. Which looks as following:
      $$\frac{dJ(w,b)^{(i)}}{db} = (f_{w,b}(x^{(i)}) - y^{(i)})$$
      $$\frac{dJ(w,b)^{(i)}}{dw} = (f_{w,b}(x^{(i)}) - y^{(i)})x_j^{(i)}$$
-   And at last return the total gradient from all training examples:
+   #### And at last return the total gradient from all training examples:
    $$\frac{\partial J(w,b)}{\partial b}  = \frac{1}{m} \sum\limits_{i = 0}^{m-1} \frac{\partial J(w,b)}{\partial b}^{(i)}$$
     
     $$\frac{\partial J(w,b)}{\partial w}  = \frac{1}{m} \sum\limits_{i = 0}^{m-1} \frac{\partial J(w,b)}{\partial w}^{(i)}$$
 
  
 ### **Gradient descent**
-  - #### Description:
+  - #### Description: Gradient descent is then iteratively used to find the optimal w,b parameter values. It does this by iterating x amount of times, starting with updating the gradient of each parameter, thanks to the "compute gradient" function. Thereafter w, and b parameters are updated as following:
+      $$w = w-\alpha *  \frac{\partial J(w,b)}{\partial w}$$
+      $$b = w-\alpha *  \frac{\partial J(w,b)}{\partial b}$$
+    #### in this case the "=" is not used as the equality sign, but as the assignment operator. w is an array in this case, where its dimension "n" is respective to      quantity of features.
+
+### Logistic Regression
