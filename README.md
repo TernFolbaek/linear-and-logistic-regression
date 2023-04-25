@@ -22,6 +22,27 @@
   - #### Description: Gradient descent is then iteratively used to find the optimal w,b parameter values. It does this by iterating x amount of times, starting with updating the gradient of each parameter, thanks to the "compute gradient" function. Thereafter w, and b parameters are updated as following:
       $$w = w-\alpha *  \frac{\partial J(w,b)}{\partial w}$$
       $$b = w-\alpha *  \frac{\partial J(w,b)}{\partial b}$$
-    #### in this case the "=" is not used as the equality sign, but as the assignment operator. w is an array in this case, where its dimension "n" is respective to      quantity of features.
+    #### in this case the "=" is not used as the equality sign, but as the assignment operator. w is an array in this case, where its dimension "n" is corresponds to quantity of features.
 
 ### Logistic Regression
+#### Logistic Regression utilizes the same functions as Linear regression, however in this specific case we regularize our training model. 
+### **Compute Sigmoid**
+ - #### Description: The model for logistic regression varies from that of linear regression since we compute the sigmoid which looks as follows: 
+   $$ f_{\mathbf{w},b}(x) = g(\mathbf{w}\cdot \mathbf{x} + b)$$
+
+   #### Where the formula for sigmoid (g) is displayed as:
+   
+   $$g(z) = \frac{1}{1+e^{-z}}$$
+ 
+### **Compute Cost1**
+ - #### Description: The compute cost function for logistic regression looks different to that of linear regression since we deal with the output values of 0-1. The equation is as shown:    
+
+
+
+### **Compute Gradient2**
+ - #### Description:
+
+### **Compute Gradient Descent3**
+ - #### Description:
+
+
