@@ -42,9 +42,12 @@
   
 
 ### **Compute Gradient**
- - #### Description: Compute gradient in a regularized algorithm is nearly the same except for the update rule for $w_j$
+ - #### Description: Compute gradient in a regularized algorithm is exactly the same for parameter b, and nearly the same for parameter $w_j$. Where the partial derivative of $w_j$ looks as follows: 
+ $$ \frac{\partial J(\mathbf{w},b)}{\partial w_j}  = \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{\mathbf{w},b}(\mathbf{x}^{(i)}) - \mathbf{y}^{(i)})x_{j}^{(i)} \tag{3}\frac{\lambda}{m} + w_j $$ 
+ #### Once again its the suffix which is what stands out.
+
 
 ### **Compute Gradient Descent**
- - #### Description:
+ - #### Description: Computing the gradient descent has no change, as the changes have already been implemented for regularization in the cost function, and compute gradient.
 
 
