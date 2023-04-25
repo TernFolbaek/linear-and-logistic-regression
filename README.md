@@ -42,7 +42,7 @@
   
 
 ### **Compute Gradient**
- - #### Description: 
+ - #### Description: Compute gradient in a regularized algorithm is nearly the same except for the update rule for $w_j$
 
 ### **Compute Gradient Descent**
  - #### Description:
