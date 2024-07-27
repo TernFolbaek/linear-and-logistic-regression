@@ -1,4 +1,4 @@
-# Linear- and Logistic Regression
+# Linear & Logistic Regression
 ## This repo is dedicated to two widely known algorithms used under supervised learning, linear regression and logisitc regression which is often called classification.
 ### Linear regression:
 ### **Compute Cost**
